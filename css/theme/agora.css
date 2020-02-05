@@ -287,3 +287,10 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 0 0; }
+
+.reveal .controls {
+  color: #008080; }
+
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+  color: #800000; }
