@@ -16,14 +16,7 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+		<!-- https://github.com/hakimel/reveal.js/ -->
 	</head>
 	<body>
 		<div class="reveal">
@@ -43,21 +36,21 @@
 						</a>
 					</section>
 					<section>
-						<h2>Agora VR</h2>
+						<h2><b>Agora VR</b></h2>
 						<br><h3>VR Therapy of Agoraphobia</h3>
 						<h4>and Social Anxiety Disorders</h4>
 						<p>
 							<small>
 								[ <span style="color: #ff0000">ℜ</span>utgers Capstone Group S20-61 ]
-								<br>Aryeh Ness, Daniel Nguyen, Ted Moseley, Michael Truong
-								<br>Advisor: Dr. Grigore Burdea
+								<br>Aryeh Ness - Daniel Nguyen - Ted Moseley - Michael Truong
+								<br>Dr. Grigore Burdea
 							</small>
 						</p>
 					</section>
 				</section>
 
 				<!-- SLIDE 2 -->
-				<section>
+				<section data-transition="convex" data-transition-speed="slow">
 					<section> 
 						<h2>The Problem</h2>
 					</section>
@@ -89,14 +82,18 @@
 				</section>
 
 				<!-- SLIDE 3 -->
-				<section>
+				<section data-transition="convex" data-transition-speed="slow">
 					<section> 
 						<h2>Our Solution</h2>
 					</section>
 					<section>
 						Some conventional treatment methods include <b>self-help</b> (e.g. breathing or lifestyle changes),
-						<span class ="fragment"><b>therapy sessions</b> (e.g. guided self-help or cognitive behavior therapy (CBT)),<span>
-						<span class ="fragment">or <b>medication</b> (e.g. Selective serotonin reuptake inhibitors (SSRIs)).</span>
+						<span class ="fragment">
+							<b>therapy sessions</b> (e.g. guided self-help or cognitive behavior therapy (CBT)),
+						<span>
+						<span class ="fragment">
+							or <b>medication</b> (e.g. Selective serotonin reuptake inhibitors (SSRIs)).
+						</span>
 					</section>
 					<section>
 						People who have these disorders find it difficult or impossible to go out for help and
@@ -115,9 +112,8 @@
 						The patient can have access to a relatively inexpensive treatment option that they can use
 						within the <b>comfort of their own space</b>.
 						<span class="fragment">
-							The usage of virtual reality allows the patient to be 
-							immersed within customized environments that can dynamically change depending on the stage of treatment or 
-							severity of the disorder.
+							The usage of Virtual Reality allows the patient to be immersed within customized environments that can
+							dynamically change depending on the stage of treatment or severity of the disorder.
 						</span>
 					</section>
 					<section>
@@ -128,7 +124,7 @@
 				</section>
 
 				<!-- SLIDE 4 -->
-				<section>
+				<section data-transition="convex" data-transition-speed="slow">
 					<section> 
 						<h2>Project Scope</h2>
 					</section>
@@ -138,7 +134,7 @@
 				</section>
 
 				<!-- SLIDE 5 -->
-				<section>
+				<section data-transition="convex" data-transition-speed="slow">
 					<section> 
 						<h2>Work Plan</h2>
 					</section>
@@ -148,7 +144,7 @@
 				</section>
 				
 				<!-- END CARD -->
-				<section>
+				<section data-transition="zoom" data-transition-speed="slow">
 					<section data-background="#dddddd">
 						<a href="#" class="navigate-down"></a>
 						<img src="lib/img/AgoraLogo-Transparent_HD.png" height="400px" draggable="false"/>
@@ -167,15 +163,10 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				hash: true,
 				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
+					{ src: 'plugin/highlight/highlight.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
